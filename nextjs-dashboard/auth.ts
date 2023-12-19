@@ -15,7 +15,10 @@ async function getUser(email: string): Promise<User | undefined> {
 		throw new Error('Failed to fetch user.');
 	}
 }
-
+/*
+	Credentials 이거를 여기서 사용하지만
+	깃허브나 구글도 사용가능
+ */
 export const { auth, signIn, signOut } = NextAuth({
 	...authConfig,
 	providers: [
